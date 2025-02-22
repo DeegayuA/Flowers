@@ -682,7 +682,7 @@
           break;  // Optimization:  Visits are sorted, so we can stop.
         }
       }
-      message = `${recentVisits/2} පාරක් ආවා නේද මේ පැයේ 🥰🩵`; // More specific message
+      message = `${Math.ceil(recentVisits / 2)} පාරක් ආවා නේද මේ පැයේ 🥰🩵`;
     } else if (timeSinceLastVisit < oneDay) {
       message = "අද ආයේ ආවද?  🥰🩵";
     } else if (timeSinceLastVisit < oneWeek) {
